@@ -243,9 +243,7 @@ section .content li{
 .swiper-slide img{
     width: 300px;
     height: 300px;
-    border-radius: 25px 25px 0 0;
-    
-    
+    border-radius: 25px 25px 0 0;   
 }
 
 .swiper-slide h2, h4{
@@ -290,7 +288,6 @@ address strong{
 }
 #phone-fax-email{
     color:white;
-    background-color:rgba(0,0,0,0.1);
     padding:30px 0 ;
     top:0;
 }
