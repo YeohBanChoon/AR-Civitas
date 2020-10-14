@@ -562,4 +562,94 @@ address strong{
     }
 }
 
+/* For mobile phones: */
+@media screen and (max-width: 415px) {
+    .bg {
+        object-fit: cover;
+    }
+
+    .img {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        margin-right: 0;
+        bottom: 0;
+        background-position: bottom;
+    }
+
+    #text{
+        font-size: 3em;
+        padding:20%;
+        display: flex;
+        top: 20%;
+        transform: translateY(-50%);
+        margin-left: auto;
+        margin-right: auto;   
+    }
+
+    section:nth-child(1){
+        display: block;
+        margin: 0;
+    }
+    
+    section:nth-child(2){
+        display: block;
+        margin: 0;
+    }
+
+    section .imgBx{
+        position: relative;
+        height: 60vh;
+    }
+    
+    section .imgBx img{
+        max-width: 300px;
+    }
+    
+    section:nth-child(1) .content{
+        padding: 100px;
+        text-align: center;
+    }
+    
+    section:nth-child(2) .content{
+        padding: 100px;
+        text-align: center;
+    }
+
+    section .content h2{
+        font-size: 20px;
+    }
+
+    section .content p{
+        font-size: 12px;
+    }
+    
+    section .content li{
+        font-size: 12px;
+    }
+
+    .search{
+        display: none;
+    }
+    
+    #content{
+        display: none;
+    }
+    
+    #search2{
+        display: block;
+    }
+    
+    .content2{
+        display: block;
+    }
+    
+    .content2 li{
+        text-shadow: 3px 3px 8px #000000;
+    }
+
+    .swiper-container {
+        bottom: 0%;
+    }
+}
 
