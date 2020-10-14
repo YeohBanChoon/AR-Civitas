@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
     <title>AR CIVITAS</title>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="contain">
-        <section>
+        <section data-aos="fade-up">
             <div class="imgBx">
                 <img src="img/img3.png" style="width: 50%; height: 100%;">
             </div>
@@ -36,7 +36,7 @@
             </div>
         </section>
 
-        <section>
+        <section data-aos="fade-up">
             <div class="imgBx">
                 <img src="img/img4.png" style="width: 50%; height: 100%;">
             </div>
@@ -57,8 +57,8 @@
 
         <div id="col">
             <img src="img/img5.jpg" class="art">
-            <img src="img/img6.png" class="search">
-            <div id="content">
+            <img src="img/img6.png" class="search" data-aos="fade-up">
+            <div id="content" data-aos="fade-up">
                 <h2>OBJECTIVE</h2>
                 <ul>
                     <li>To make the user’s life easier as they help the user navigate when walking as the user know precisely which road to take because AR can point in the right direction so the users are heading the right way</li><br>
@@ -78,102 +78,99 @@
         </div>
 
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container" data-aos="fade-up">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="img/img10.jpg">
-                <h4>SV</h4>
-                <h6>PN.SITI ZAIMAR BINTI WAHID</h6>
-                </div>
-            <div class="swiper-slide">
-                <img src="img/img8.jpg">
-                <h4>PROJECT MANAGER</h4>
-                <h6>YEW GERALDINE KENG-CHENG</h6>
-                </div>
-            <div class="swiper-slide">
-                <img src="img/img9.jpg">
-                <h4>ANALYSIS</h4>
-                <h6>AMIRAH BINTI AMRAN</h6>
-                </div>
-            <div class="swiper-slide">
-                <img src="img/img11.jpg">
-                <h4>PROGRAMMER</h4>
-                <h6>YEOH BAN CHOON</h6>
+                <div class="swiper-slide">
+                    <img src="img/img10.jpg">
+                    <h4>SV</h4>
+                    <h6>PN.SITI ZAIMAR BINTI WAHID</h6>
+                    </div>
+                <div class="swiper-slide">
+                    <img src="img/img8.jpg">
+                    <h4>PROJECT MANAGER</h4>
+                    <h6>YEW GERALDINE KENG-CHENG</h6>
+                    </div>
+                <div class="swiper-slide">
+                    <img src="img/img9.jpg">
+                    <h4>ANALYSIS</h4>
+                    <h6>AMIRAH BINTI AMRAN</h6>
+                    </div>
+                <div class="swiper-slide">
+                    <img src="img/img11.jpg">
+                    <h4>PROGRAMMER</h4>
+                    <h6>YEOH BAN CHOON</h6>                                                                                     
                 </div>
             </div>
         </div>
 
         <!-- Initialize Swiper -->
         <script>
-        var swiper = new Swiper('.swiper-container', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflowEffect: {
-                rotate: 20,
-                stretch: 0,
-                depth: 200,
-                modifier: 1,
-                slideShadows: true,
-            },
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
 
-        var s = skrollr.init();
+            var s = skrollr.init();
         </script>
 
-
-    <div class="contact">
-        <div class="container">
-            <div class="row">
-                <br><br>
-                <div class ="col-md-6">
-                    <div id="contact-left">
-                        <h3>AR CIVITAS</h3><br>
-                        <p>AR Civitas is an application that use augmented reality (AR) to help you navigate when walking.</p>   
+        <div class="contact">
+            <div class="container">
+                <div class="row" data-aos="fade-up">
+                    <br><br>
+                    <div class ="col-md-6">
+                        <div id="contact-left">
+                            <h3>AR CIVITAS</h3><br>
+                            <p>AR Civitas is an application that use augmented reality (AR) to help you navigate when walking.</p>   
+                        </div>
                     </div>
-                </div>
 
-               <div class="col-md-6">
-                    <div id="contact-right">
-                        <div id="contact-info">
-                            <address>
-                                <strong>Address</strong><br>
-                                <p>Pinang Nirai, 11000 Balik Pulau, Penang</p>
-                            </address>
+                    <div class="col-md-6">
+                        <div id="contact-right">
+                            <div id="contact-info">
+                                <address>
+                                    <strong>Address</strong><br>
+                                    <p>Pinang Nirai, 11000 Balik Pulau, Penang</p>
+                                </address>
 
-                            <div id="phone-fax-email">
-                                <p>
-                                <strong>Phone :
-                                    <span>012-3456789</span><br>
-                                </strong>
-                                <strong>Email :
-                                    <span>aliahamad@gmail.com</span><br>
-                                </strong>
-                                </p>
+                                <div id="phone-fax-email">
+                                    <p>
+                                    <strong>Phone :
+                                        <span>016-434 4557</span><br>
+                                    </strong>
+                                    <strong>Email :
+                                        <span>bacnhoon365@gmail.com</span><br>
+                                    </strong>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                   </div>
-               </div>
-            </div>
-        </div>
-      </div>
-    
-    <div id="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div id= "footer-copyright">
-                        <p>Copyrights &copy; 2020 All Rights Reserved by AR CIVITAS inc.</p>
                     </div>
+                </div>
+
+                <div id= "footer-copyright">
+                    <p>Copyrights &copy; 2020 All Rights Reserved by AR CIVITAS inc.</p>
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
